@@ -2,7 +2,8 @@ name: Scheduled Workflow
 
 on:
   schedule:
-    - cron: '0 3 * * *'   # Runs every day at 3:00 AM (UTC)
+    - cron: '0 3 * * *'
+  workflow_dispatch:   # 👈 add this
 
 jobs:
   build:
